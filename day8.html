@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <input type="text" onkeyup="func1()" placeholder="Enter">
+    <input type="text" onkeydown="func2()" placeholder="Enter"> -->
+
+    <input type="text" id="demo" onkeyup="func3()" placeholder="Enter">
+
+</body>
+<script>
+    function func1(){
+        alert('hello')
+    }
+
+    function func3(){
+        var x = document.getElementById('demo').value
+        document.getElementById('demo').value = x.toLowerCase()
+    }
+
+    var string = "lorem asdsad erer Black is the new black i hate loll"
+    alert(string.replace(/black/gi,"green"))
+</script>
+</html>

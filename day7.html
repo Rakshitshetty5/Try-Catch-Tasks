@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modalclass{
+            height: 200px;
+            width: 233px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button onclick={clickMe(this)}>1</button>
+    <button onclick={clickMe(this)}>2</button>
+    <button onclick={clickMe(this)}>3</button>
+
+    <div class="modalclass" id="modal">
+        <input type="text" name="name" id="input1">
+        <span>&times;</span>
+    </div> -->
+
+    <img src="IMG/pic1.jpg" alt="1" width="200" height="200" onmouseover="func2(this,3)" onmouseout="(func2(this,1))">
+    <img src="IMG/pic2.jpg" alt="2" width="200" height="200" onmouseover="func2(this,3)" onmouseout="(func2(this,2))">
+
+    <script>
+
+        // var modal = document.getElementById('modal')
+        // function clickMe(e){
+        //     modal.style.display = "block";
+        //     var b = e.innerHTML;
+        //     document.getElementById("input1").value = b;
+        // }
+
+        // var span = document.getElementsByTagName('span')[0]
+        // span.onclick = function(){
+        //     modal.style.display = 'none'
+        // }
+
+        func2(e,num){
+            e.src = "IMG/PIC" + num + '.jpg'
+        }
+
+    </script>
+</body>
+</html>

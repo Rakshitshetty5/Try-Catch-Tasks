@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="inp1" placeholder=" Enter Name">
+    <input type="text" id="inp2" placeholder="Enter Age">
+    <button onclick="myFunc()">Submit</button>
+    <div style="height: 100px;" id="display"></div> -->
+
+    <form onsubmit="return false">
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female
+        <input type="radio" name="City" value="Mumbai">Mumbai
+        <input type="radio" name="City" value="Pune">Pune
+
+        <button onclick="radioVal()">submit</button>
+    </form>
+    <div id="div2"></div>
+
+    <script>
+        // function myFunc() {
+        //     const input = {
+        //         name : document.getElementById('inp1').value,
+        //         age : document.getElementById('inp2').value
+        //     }
+
+        //     document.getElementById('display').innerHTML = "Name: " + input.name + "<br>" + "Age: " + input.age
+            
+        // }
+
+        function radioVal() {
+            var e = document.getElementsByTagName('input')
+            for(var i = 0; i < e.length; i++){
+                if(e[i].type = "radio"){
+                    if(e[i].checked){
+                        document.getElementById("div2").innerHTML += e[i].value +"<br>"
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

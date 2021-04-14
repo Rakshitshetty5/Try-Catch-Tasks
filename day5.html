@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            height: 200px;
+            width: 200px;
+            border: 2px solid grey;
+            padding: 20px;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="abc" onmouseover="funct1()" onmouseout="funct2()" id="demo1">onmouseover</div> -->
+    <!-- <img src="" alt="" class="abc" onmouseover="funct1()" onmouseout="funct2()" id="demo1"> -->
+    <div class="abc" id ="demo3" onmouseup="func3()"></div>
+    <div class="abc" id ="demo4" onmousedown="func4()"></div>
+    <div class="abc" id ="demo5" ondblclick="func5()"></div>
+    <div class="abc" id ="demo6" oncopy="func6()">sdfsdf</div>
+    <script>
+        // function funct1(){
+        //     document.getElementById('demo1').style.background = 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png)'
+        // }
+
+        // function funct2(){
+        //     document.getElementById('demo1').style.background = 'url(https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png)'
+        // }
+
+        // function funct1(){
+        //     document.getElementById('demo1').src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png'
+        // }
+
+        // function funct2(){
+        //     document.getElementById('demo1').src = 'https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png'
+        // }
+
+        function func3(){
+            document.getElementById('demo3').style.backgroundColor = "red"
+        }
+        function func4(){
+            document.getElementById('demo4').style.backgroundColor = "red"
+        }
+
+        function func5(){
+            document.getElementById('demo5').style.backgroundColor = "red"
+        }
+
+        function func6(){
+            document.getElementById('demo6').style.backgroundColor = "red"
+        }
+
+
+        //onmousedowen ondbclick oncopy
+    </script>
+</body>
+</html>

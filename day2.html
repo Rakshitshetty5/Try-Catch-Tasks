@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+        .xyz{
+            border: 3px solid grey;
+            height: 200px;
+            width: 200px;
+        }
+        .modal{
+            height: 250px;
+            width: 350px;
+            margin: 40px;
+            border: 2px solid black;
+            display: none;
+        }
+        .test{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+  <!-- <input type="text" placeholder="Number 1" id="demo1">
+  <span>+</span>
+  <input type="text" placeholder="Number 2" id="demo2">
+  <button onclick="add()">Add</button>
+  <h1 id="demo3"></h1> -->
+
+  <!-- <a href="https://youtube.com/" id="demo4">Try It</a> -->
+  <!-- <div id="demo5"></div>
+  <button onclick="myfunc2()">click me</button> -->
+
+  <!-- <div class="xyz" id="demo6"></div>
+  <button onclick="myfunc3()">Click</button> -->
+
+  <!-- <button onclick="showModal()">Click</button>
+
+  <div class="modal" id="demo7">
+      <span style="float: right; padding: 20px; font-size: 2rem;" onclick="closeModal()">&times;</span>
+  </div> -->
+
+  <h1 class="test">hey1</h1> <!--index 0-->
+  <h1 class="test">hey2</h1> <!--index 1-->
+  <h1 class="test">hey3</h1> <!--index 2-->
+  <button onclick="changeColor()">Change Color</button>
+
+  <b>Hello </b><b>1</b><b>3</b>
+  <button onclick="changeUsingTag()">Change tag</button>
+
+  <script>
+    //   function add(){
+    //       var a = document.getElementById('demo1').value;
+    //       var b = document.getElementById('demo2').value;
+
+    //       var sum = Number(a) + Number(b);
+    //       document.getElementById('demo3').innerHTML = sum
+    //   }
+
+    // var a = document.getElementById("demo4").getAttribute("href");
+
+    //Any attributed can be fetched using getAttribute like id class href
+    // alert(a)
+
+    // function myfunc2(){
+    //     document.getElementById('demo5').setAttribute("class","abc")
+    // }
+
+    // function myfunc3(){
+    //     document.getElementById('demo6').style.backgroundColor = "red"
+    // }
+
+    // function showModal(){
+    //     document.getElementById('demo7').style.display = "block"
+    // }
+
+    // function closeModal(){
+    //     document.getElementById('demo7').style.display = "none"
+    // }
+
+    function changeColor(){
+        var x = document.getElementsByClassName('test');
+        // each element having same class have index from 0
+        x[1].style.backgroundColor = "red" //using looping for applying to everyone
+    }
+
+    function changeUsingTag(){
+        var y = document.getElementsByTagName('b');
+        y[2].innerHTML = "hello"
+        y[1].style.backgroundColor="pink"
+    }
+
+  </script>
+</body>
+</html>

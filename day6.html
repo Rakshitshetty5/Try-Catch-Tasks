@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .copy{
+          
+            text-align: center;
+           padding: 10px;
+            display: none;
+            border: 1px solid black;
+            margin-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <input type="text"  oninput="fun1();" placeholder="oninput">
+    <input type="text"  onblur="fun2();" placeholder="onblur">
+    <input type="text"  onselect="fun3();" placeholder="onblur">
+    <input type="text"  onfocus="fun4();" placeholder="onblur"> -->
+
+    <!-- <input type="text" onselect="select_input()" id="demo" value="Hello" />
+    <div class="copy" id="btn">
+        Copy/cut
+    </div> -->
+
+    <!-- <select onchange="func5()">
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JS</option>
+    </select> -->
+
+    <!-- <iframe src="https://www.trycatchclasses.com/" onload="func6()" frameborder="0"></iframe>
+    <p id="demo2"></p> -->
+
+    <button onclick={clickMe(this)} title="btn1">btn-1</button>
+    <button onclick={clickMe(this)} title="btn1">btn-2</button>
+    <button onclick={clickMe(this)} title="btn1">btn-3</button>
+    <button onclick={clickMe(this)} title="btn1">btn-4</button>
+    <button onclick={clickMe(this)} title="btn1">btn-5</button>
+
+    <!-- In an event, this refers to the element that received the event. -->
+
+
+    <script>
+        // function fun1(){
+        //     alert("hello")
+        // }
+        // function fun2(){
+        //     alert("hello")
+        // }
+        // function fun3(){
+        //     alert("hello")
+        // }
+        // function fun4(){
+        //     alert("hello")
+        // }
+        // function select_input(){
+            
+        //     document.getElementById('btn').style.display = "block"
+        // }
+
+        // function func5(){
+        //     alert('hello')
+        // }
+
+        function func6(){
+            document.getElementById('demo2').innerHTML = "iframe is loaded"
+        }
+
+        function clickMe(e){
+            console.log(e)
+            e.style.color = "red"
+            alert(e.title)
+        }
+       
+    </script>
+</body>
+</html>
